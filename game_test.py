@@ -12,9 +12,10 @@ word = original.lower()
 # take first letter
 first = word[0]
 
-# make word
+# make word len() => retorna o tamanho de uma variavel
 new_word = word[1:len(word)] + first + pyg
 
+#  original.isalpha() => testa se em uma string só tem caracteres de texto
 if len(original) > 0 and original.isalpha():
     
     print "Word OK: " + new_word

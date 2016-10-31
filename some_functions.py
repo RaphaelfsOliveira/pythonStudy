@@ -140,3 +140,62 @@ inventory['backpack'].remove('dagger')
 
 # adicionando mais 50 de ouro a chave gold
 inventory['gold'] += 50
+
+
+#######################################
+# for no vetor
+a = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+
+for num in a:
+    if num % 2 == 0:
+        print num
+
+###### printando vetores de strings
+# printando a string codecamy que é um vetor
+for letter in "Codecademy":
+    print letter
+    
+# Empty lines to make the output pretty
+print
+print
+
+word = "Programming is fun!"
+
+# printar letras i
+for letter in word:
+    # Only print out the letter i
+    if letter == "i":
+        print letter
+
+
+##############################
+# for em dois vetores para printar chaves e valores
+
+prices = {
+    "banana" : 4,
+    "apple"  : 2,
+    "orange" : 1.5,
+    "pear"   : 3,
+}
+stock = {
+    "banana" : 6,
+    "apple"  : 0,
+    "orange" : 32,
+    "pear"   : 15,
+}
+
+total = 0
+
+for key in prices:
+    print key
+    print "price: %s" % prices[key]
+    print "stock: %s" % stock[key]
+    print "Fruit: " + str(prices[key] * stock[key])
+    total += prices[key] * stock[key]
+    print
+    
+print total
+
+
+####
+

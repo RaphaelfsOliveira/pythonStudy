@@ -66,3 +66,19 @@ print square_list
 square_list.sort()
 
 print square_list
+
+
+## adicionando itens com preço em um "menu"
+
+menu = {} # Empty dictionary
+menu['Chicken Alfredo'] = 14.50 # Adding new key-value pair
+print menu['Chicken Alfredo']
+
+# Your code here: Add some dish-price pairs to menu!
+menu['Hamburguer'] = 32.90
+print menu['Hamburguer']
+
+menu['Spam'] = 2.58
+
+print "There are " + str(len(menu)) + " items on the menu."
+print menu

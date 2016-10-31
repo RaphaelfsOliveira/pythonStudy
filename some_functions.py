@@ -82,3 +82,61 @@ menu['Spam'] = 2.58
 
 print "There are " + str(len(menu)) + " items on the menu."
 print menu
+
+
+# vetor com varios registros e seus valores
+
+# key - animal_name : value - location 
+zoo_animals = { 'Unicorn' : 'Cotton Candy House',
+'Sloth' : 'Rainforest Exhibit',
+'Bengal Tiger' : 'Jungle House',
+'Atlantic Puffin' : 'Arctic Exhibit',
+'Rockhopper Penguin' : 'Arctic Exhibit'}
+# A dictionary (or list) declaration may break across multiple lines
+
+# deletando registros do vetor
+del zoo_animals['Unicorn']
+del zoo_animals['Sloth']
+del zoo_animals['Bengal Tiger']
+
+# mudando valores dos registros
+zoo_animals['Rockhopper Penguin'] = 'Americas'
+
+print zoo_animals
+
+
+# removendo itens da lista
+
+backpack = ['xylophone', 'dagger', 'tent', 'bread loaf']
+
+backpack.remove('dagger')
+
+print backpack
+
+
+########
+
+# lista inventario
+inventory = {
+    'gold' : 500,
+    'pouch' : ['flint', 'twine', 'gemstone'], # Assigned a new list to 'pouch' key
+    'backpack' : ['xylophone','dagger', 'bedroll','bread loaf']
+}
+
+# adicionando uma chave que contem uma lista
+inventory['burlap bag'] = ['apple', 'small ruby', 'three-toed sloth']
+
+# arrumando a lista sort por ordem alfabetica
+inventory['pouch'].sort() 
+
+# adicionando a chave pocket a lista inventario
+inventory['pocket'] = ['seashell', 'strange berry', 'lint']
+
+# arrumando a lista backpack por ordem alfabetica
+inventory['backpack'].sort()
+
+# removendo um registro da chave inventário
+inventory['backpack'].remove('dagger')
+
+# adicionando mais 50 de ouro a chave gold
+inventory['gold'] += 50

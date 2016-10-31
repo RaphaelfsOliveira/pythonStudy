@@ -51,3 +51,18 @@ animals.insert(2,"cobra")
 
 print duck_index 
 print animals # Observe what prints after the insert operation
+
+
+start_list = [5, 3, 1, 2, 4]
+square_list = []
+
+# fazendo a operação e salvando em outro vetor
+for number in start_list:
+    square_list.append(number**2)
+
+print square_list
+
+# organizando a lista do menor para o maior funciona com string tambem
+square_list.sort()
+
+print square_list

@@ -26,9 +26,10 @@ print type('Spam')
 
 print type(True)
 
+################## OPERAÇÕES COM VETORES
 # adicionando dados a um vetor
 suitcase = [] 
-suitcase.append("sunglasses")
+suitcase.append("sunglasses") # adicionando um dado ao final do vetor
 
 # Your code here!
 suitcase.append("chinello")
@@ -39,3 +40,14 @@ list_length = len(suitcase) # Set this to the length of suitcase
 
 print "There are %d items in the suitcase." % (list_length)
 print suitcase
+
+# vetor animais
+animals = ["aardvark", "badger", "duck", "emu", "fennec fox"]
+# procurando um animal na lista
+duck_index = animals.index("duck") # Use index() to find "duck"
+
+# inserindo um animal no index do vetor que voce quiser
+animals.insert(2,"cobra")
+
+print duck_index 
+print animals # Observe what prints after the insert operation

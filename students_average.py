@@ -42,7 +42,15 @@ def get_letter_grade(score):
     else:
         return "F"
         
-print get_letter_grade(lloyd)
-print get_letter_grade(alice)
-print get_letter_grade(tyler)
+        
+student = [lloyd, alice, tyler]
+
+def get_class_average(students):
+    results = []
+    for key in students:
+        results.append(get_average(key))
+    return average(results)
     
+print get_class_average(student)
+
+print get_letter_grade(get_class_average(student))

@@ -1,3 +1,5 @@
+
+### como eu fiz o game... 
 board = []
 
 def create(lst):
@@ -28,3 +30,19 @@ print
 
 for i in range(5):
     print board
+
+    
+###como o exercício manda fazer 
+
+board=[]
+
+for x in range(0,5):
+    r=['O']*5
+    board.append(r)
+    
+def print_board(board):
+    for row in board:
+        print " ".join(row)
+
+print print_board(board)
+

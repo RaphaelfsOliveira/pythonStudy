@@ -46,3 +46,15 @@ def print_board(board):
 
 print print_board(board)
 
+#add function random########################
+from random import randint # import random module
+
+def random_row(board):
+    return randint(0, len(board) - 1)
+    
+def random_col(board):
+    return randint(0, len(board) - 1)
+    
+print random_row(board)
+print random_col(board)
+

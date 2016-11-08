@@ -53,3 +53,10 @@ for key in d:
     print_this = key + " " + d[key]
     print print_this
 
+# print index with the 
+
+choices = ['pizza', 'pasta', 'salad', 'nachos']
+
+print 'Your choices are:'
+for index, item in enumerate(choices):
+    print index, item

@@ -16,7 +16,7 @@ else:
 
 
     
-# test some code
+# test some code Looping WHILE#####################
 
 from random import randint
 
@@ -36,4 +36,12 @@ while guesses_left > 0:
 else:
     print "You Lose!!"
 
+    
+# Looping FOR####################################
+
+print "Counting..."
+
+for i in range(20):
+    print i
+    
     

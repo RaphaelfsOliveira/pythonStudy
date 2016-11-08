@@ -44,4 +44,12 @@ print "Counting..."
 for i in range(20):
     print i
     
-    
+
+# work with dictionary
+d = {'a': 'apple', 'b': 'berry', 'c': 'cherry'}
+
+for key in d:
+    # Your code here!
+    print_this = key + " " + d[key]
+    print print_this
+

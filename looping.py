@@ -53,7 +53,8 @@ for key in d:
     print_this = key + " " + d[key]
     print print_this
 
-# print index with the 
+
+# print index with the key
 
 choices = ['pizza', 'pasta', 'salad', 'nachos']
 

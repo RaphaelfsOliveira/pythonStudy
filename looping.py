@@ -59,5 +59,6 @@ for key in d:
 choices = ['pizza', 'pasta', 'salad', 'nachos']
 
 print 'Your choices are:'
+###### enumarate() -> function create index for keys
 for index, item in enumerate(choices):
     print index, item

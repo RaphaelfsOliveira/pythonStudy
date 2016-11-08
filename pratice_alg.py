@@ -7,7 +7,6 @@ def digit_sum(x):
         result += x
     return result
 
-
 print digit_sum(434)
 
 
@@ -21,9 +20,7 @@ def factorial(x):
         #print result
         
     return result
-
-
-    
+  
 print factorial(4)
 print 
 print factorial(1)

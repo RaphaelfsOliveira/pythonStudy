@@ -19,4 +19,4 @@ def anti_vowel(text):
         
     return t
 
-print anti_vowel("Raphael")
+print anti_vowel("Hello World!!")

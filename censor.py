@@ -5,7 +5,7 @@ def censor(text,word):
         if tx[i] == word:
             tx[i] = "*" * len(tx[i])
 
-    return tx
+    return " ".join(tx)
 
 
 print censor("this hack is wack hack", "hack")

@@ -39,3 +39,20 @@ panda = Animal("Chad", 7, True)
 print zebra.name, zebra.age, zebra.is_hungry
 print giraffe.name, giraffe.age, giraffe.is_hungry
 print panda.name, panda.age, panda.is_hungry
+
+##class
+class Animal(object):
+    """Makes cute animals."""
+    is_alive = True
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    
+    #create method 
+    def description(self):
+        print self.name
+        print self.age
+
+hippo = Animal("Hathi", 42)
+
+print hippo.description()

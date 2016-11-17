@@ -82,3 +82,18 @@ class ShoppingCart(object):
         else:
             print product + " is not in the cart."
             
+            
+my_cart = ShoppingCart("Raphael")
+print my_cart.customer_name
+
+my_cart.add_item("Moto X2", 500)
+my_cart.add_item("Moto Z Play", 1500)
+my_cart.add_item("Moto X2", 500)
+
+print my_cart.items_in_cart.items()
+print my_cart.items_in_cart.keys()
+print my_cart.items_in_cart.values()
+
+my_cart.remove_item("Lenovo Vibe")
+my_cart.remove_item("Moto Z Play")
+            

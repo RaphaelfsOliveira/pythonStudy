@@ -67,22 +67,3 @@ to_one_hundred = range(101)
 backwards_by_tens = to_one_hundred[::10]
 
 print backwards_by_tens
-
-####functional programming
-"""
-One of the more powerful aspects of Python
-is that it allows for a style of programming 
-called functional programming, which means that 
-you're allowed to pass functions around just as 
-if they were variables or values. Sometimes we 
-take this for granted, but not all languages allow this!
-"""
-
-my_list = range(16)
-
-print filter(lambda x: x % 3 == 0, my_list)
-
-
-languages = ["HTML", "JavaScript", "Python", "Ruby"]
-print filter(lambda i: i == "Python", languages)
-

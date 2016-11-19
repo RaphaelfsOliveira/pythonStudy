@@ -96,4 +96,37 @@ print my_cart.items_in_cart.values()
 
 my_cart.remove_item("Lenovo Vibe")
 my_cart.remove_item("Moto Z Play")
+
+############ creating superclass!!!!!!!
+class Employee(object):
+    """Models real-life employees!"""
+    def __init__(self, employee_name):
+        self.employee_name = employee_name
+
+    def calculate_wage(self, hours):
+        self.hours = hours
+        return hours * 20.00
+
+# override method Employee
+class PartTimeEmployee(Employee):
+    ######superclass return method oof employee in subclass
+    def full_time_wage(self, hours):
+        return super(PartTimeEmployee, self).calculate_wage(hours)
+
+    def calculate_wage(self, hours):
+        self.hours = hours
+        return hours * 12.00
+
+milton = PartTimeEmployee("milton")
+Jack = PartTimeEmployee("Jack")
+Joe = Employee("Joe")
+
+print milton.employee_name, milton.full_time_wage(10)
+print
+print Joe.employee_name, Joe.calculate_wage(10)
+print 
+print Jack.employee_name, Jack.calculate_wage(10)
+
+#print Employee.calculate_wage(6)
+
             

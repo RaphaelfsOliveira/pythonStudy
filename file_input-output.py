@@ -16,3 +16,8 @@ print read_file.read()
 
 #always close the file
 read_file.close()
+
+########################################
+#method that close the file auto
+with open("text.txt","w") as my_file:
+    my_file.write("Jack and Jill")

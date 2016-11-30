@@ -21,3 +21,13 @@ read_file.close()
 #method that close the file auto
 with open("text.txt","w") as my_file:
     my_file.write("Jack and Jill")
+
+    
+######close file    
+with open("text.txt","w") as my_file:
+    my_file.write("Jack and Jill")
+    
+if not my_file.closed:
+    my_file.close()
+    
+print my_file.closed
